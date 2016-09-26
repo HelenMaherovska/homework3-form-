@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Соціологічне опитування</title>
+        <style type="text/css">
+            body 
+            {
+                width: 800px;
+                margin: auto;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <header>
+            <h1>Анкета відвідувача ресторану</h1>
+        <header>
+          
+        <section>        
+            <form action="https://formspree.io/maher.olena96@email.com" method="POST" >
+                <fieldset>
+                    <legend>Контактна інформація</legend>
+                    
+                    <p>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" name="name" id="name" required>
+                    </p>
+                    
+                    <p>
+                    <label for="phone_number">Телeфон:</label>
+                    <input type="tel" name="phone_number" id="phone_number" required>
+                    </p>
+                    
+                    <p>
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" name="email" id="email" required>
+                    </p>
+                </fieldset>
+                
+                <br>
+                
+                <fieldset>
+                    <legend>Персональна інформація</legend>
+                    
+                    <p>
+                        <label for="age">Вік:</label>
+                        <input type="number" name="age" id="age" min="1" max="100" step="1" required>
+                    </p>
+                    
+                    
+                    <p>
+                        <label for="kithen">Улюблена кухня:</label>
+                       
+                        <select name="kithen" id="kithen" size="4" multiple required>
+                            <option disabled>Виберіть кухню</option>
+                            <option selected>Українська</option>
+                            <option>Грузинська</option>
+                            <option>Японська</option>
+                            <option>Італійська</option>
+                        </select>
+                    </p>    
+                   
+                   <p>
+                       <label for="recommendation">Які страви ви б хотіли побачити в меню?</label>
+                       <textarea name="recommendation" id="recommendation" cols="40" rows="7"></textarea>
+                   </p>
+                </fieldset>
+                
+                <br>
+                
+                <fieldset>
+                    <legend>Оцінка нашого закладу</legend>
+                    
+                    <h4>Чому ви обрали наш заклад?</h4>
+                    <p><input type="checkbox" name="question"/>Близько від дому/роботи</p>
+                    <p><input type="checkbox" name="question"/>Побачили рекламу</p>
+                    <p><input type="checkbox" name="question"/>Порадили знайомі</p>
+                    <p><input type="checkbox" name="question"/>Оптимальне співвідношення ціна-якісь</p>
+                    <p><input type="checkbox" name="question"/>Інше</p>
+                    <p><input type="text" name="another_for_question"/></p>
+                    
+                    <h4>Що вам найбільше сподобалось?</h4>
+                    <p><input type="checkbox" name="question"/>Страви</p>
+                    <p><input type="checkbox" name="question"/>Обслуговування</p>
+                    <p><input type="checkbox" name="question"/>Інтер'єр</p>
+                    <p><input type="checkbox" name="question"/>Інше</p>
+                    <p><input type="text" name="another_for_question"/></p>
+                    
+                    <h4>Як ви оцінюєте якісь наших страв?</h4>
+                    <p><input type="radio" name="question1"/>Висока</p>
+                    <p><input type="radio" name="question1"/>Середня</p>
+                    <p><input type="radio" name="question1"/>По-різному</p>
+                    <p><input type="radio" name="question1"/>Низька</p>
+                    
+                    <h4>Чи вважаєте ви наш заклад затишним?</h4>
+                    <p><input type="radio" name="question2"/>Так</p>
+                    <p><input type="radio" name="question2"/>Ні</p>
+                    
+                    <h4>Чи порекомендували би ви наш заклад друзям чи знайомим?</h4>
+                    <p><input type="radio" name="question3"/>Так</p>
+                    <p><input type="radio" name="question3"/>Ні</p>
+                    
+                    <h4></h4>
+                    
+                </fieldset>
+                    <br>
+                    <input type="submit" name="submit"/>
+                    <br>
+                    <br>
+                
+            </form>
+        </section>
+
+    </body>
+</html>
